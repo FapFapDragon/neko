@@ -11,7 +11,7 @@ export const namespaced = true
 export const state = () => ({
   id: '',
   clipboard: '',
-  locked: false,
+  locked: true,
   implicitHosting: true,
   fileTransfer: true,
   keyboardModifierState: -1,
@@ -64,7 +64,7 @@ export const mutations = mutationTree(state, {
   reset(state) {
     state.id = ''
     state.clipboard = ''
-    state.locked = false
+    state.locked = true
   },
 })
 
